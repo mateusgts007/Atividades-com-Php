@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Form</title>
+
+</head>
+
+<body>
+    
+    <h1>Formulário de Animais</h1>
+
+    <form action="process.php" method="GET">
+        <label for="tipoAnimal">Escolha o animal:</label>
+        <select name="tipoAnimal" id="tipoAnimal">
+            <option value="gato">Gato</option>
+            <option value="passarinho">Passarinho</option>
+        </select>
+        <br><br>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" required>
+        <br><br>
+
+        <label for="corPelagem">Cor da Pelagem (se for gato):</label>
+        <input type="text" name="corPelagem" id="corPelagem">
+        <br><br>
+
+        <label for="tipoCanto">Tipo de Canto (se for passarinho):</label>
+        <input type="text" name="tipoCanto" id="tipoCanto">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
