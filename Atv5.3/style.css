@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Usa toda a altura da página */
+    background-color: #eb8181; /* Cor de fundo suave */
+}
+
+#imagem_esquerda {
+    float: left;
+    height: 90%;
+    width: 40%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#botao {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+#botao:hover {
+    background-color: #45a049; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+
+/* Efeito quando o botão é pressionado */
+#botao:active {
+    background-color: #3e8e41; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+}
